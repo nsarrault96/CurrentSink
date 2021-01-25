@@ -18,21 +18,22 @@ L Amplifier_Operational:MCP6002-xSN U?
 U 1 1 60089667
 P 5000 2650
 F 0 "U?" H 5000 3017 50  0000 C CNN
-F 1 "MCP6002-xSN" H 5000 2926 50  0000 C CNN
-F 2 "" H 5000 2650 50  0001 C CNN
+F 1 "MCP6002" H 5000 2926 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5000 2650 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 5000 2650 50  0001 C CNN
+F 4 "MCP6002T-I/SN" H 5000 2650 50  0001 C CNN "MPN"
 	1    5000 2650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Amplifier_Operational:MCP6002-xSN U?
 U 3 1 6008AAAD
-P 8700 1450
-F 0 "U?" H 8658 1496 50  0000 L CNN
-F 1 "MCP6002-xSN" H 8658 1405 50  0000 L CNN
-F 2 "" H 8700 1450 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 8700 1450 50  0001 C CNN
-	3    8700 1450
+P 9100 1500
+F 0 "U?" H 9058 1546 50  0000 L CNN
+F 1 "MCP6002" H 9058 1455 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9100 1500 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 9100 1500 50  0001 C CNN
+	3    9100 1500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -40,21 +41,10 @@ L Amplifier_Operational:MCP6002-xSN U?
 U 2 1 6008EEC5
 P 2500 2850
 F 0 "U?" H 2500 3217 50  0000 C CNN
-F 1 "MCP6002-xSN" H 2500 3126 50  0000 C CNN
-F 2 "" H 2500 2850 50  0001 C CNN
+F 1 "MCP6002" H 2500 3126 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2500 2850 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 2500 2850 50  0001 C CNN
 	2    2500 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Regulator_Linear:MIC5205-2.5YM5 U?
-U 1 1 60092225
-P 7450 1100
-F 0 "U?" H 7450 1442 50  0000 C CNN
-F 1 "MIC5205-2.5YM5" H 7450 1351 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 7450 1425 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005785A.pdf" H 7450 1100 50  0001 C CNN
-	1    7450 1100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -62,9 +52,10 @@ L Device:Q_NMOS_DSG Q?
 U 1 1 60096368
 P 6100 2650
 F 0 "Q?" H 6304 2696 50  0000 L CNN
-F 1 "Q_NMOS_DSG" H 6304 2605 50  0000 L CNN
-F 2 "" H 6300 2750 50  0001 C CNN
-F 3 "~" H 6100 2650 50  0001 C CNN
+F 1 "STP55NF06L" H 6304 2605 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6300 2750 50  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/49/c5/a8/71/93/60/4f/86/CD00002690.pdf/files/CD00002690.pdf/jcr:content/translations/en.CD00002690.pdf" H 6100 2650 50  0001 C CNN
+F 4 "STP55NF06L" H 6100 2650 50  0001 C CNN "MPN"
 	1    6100 2650
 	1    0    0    -1  
 $EndComp
@@ -73,7 +64,7 @@ L Device:R R?
 U 1 1 6009839B
 P 6200 3500
 F 0 "R?" H 6270 3546 50  0000 L CNN
-F 1 "R" H 6270 3455 50  0000 L CNN
+F 1 "0.1" H 6270 3455 50  0000 L CNN
 F 2 "" V 6130 3500 50  0001 C CNN
 F 3 "~" H 6200 3500 50  0001 C CNN
 	1    6200 3500
@@ -151,70 +142,36 @@ Wire Wire Line
 $Comp
 L Device:C C?
 U 1 1 600F940B
-P 8100 1300
-F 0 "C?" H 8215 1346 50  0000 L CNN
-F 1 "C" H 8215 1255 50  0000 L CNN
-F 2 "" H 8138 1150 50  0001 C CNN
-F 3 "~" H 8100 1300 50  0001 C CNN
-	1    8100 1300
+P 8550 1400
+F 0 "C?" H 8665 1446 50  0000 L CNN
+F 1 "10uF" H 8665 1355 50  0000 L CNN
+F 2 "" H 8588 1250 50  0001 C CNN
+F 3 "~" H 8550 1400 50  0001 C CNN
+	1    8550 1400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 600F9C77
-P 6750 1300
-F 0 "C?" H 6865 1346 50  0000 L CNN
-F 1 "C" H 6865 1255 50  0000 L CNN
-F 2 "" H 6788 1150 50  0001 C CNN
-F 3 "~" H 6750 1300 50  0001 C CNN
-	1    6750 1300
+P 6650 1400
+F 0 "C?" H 6765 1446 50  0000 L CNN
+F 1 "1uF" H 6765 1355 50  0000 L CNN
+F 2 "" H 6688 1250 50  0001 C CNN
+F 3 "~" H 6650 1400 50  0001 C CNN
+	1    6650 1400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7750 1000 8100 1000
-Wire Wire Line
-	8600 1000 8600 1150
-Wire Wire Line
-	8100 1150 8100 1000
-Connection ~ 8100 1000
-Wire Wire Line
-	8100 1000 8600 1000
-Wire Wire Line
-	6750 1150 6750 1000
-Wire Wire Line
-	6750 1000 7150 1000
-Wire Wire Line
-	6750 1450 6750 1850
-Wire Wire Line
-	6750 1850 7450 1850
-Wire Wire Line
-	8600 1850 8600 1750
-Wire Wire Line
-	8100 1450 8100 1850
-Connection ~ 8100 1850
-Wire Wire Line
-	8100 1850 8600 1850
-Wire Wire Line
-	7450 1400 7450 1850
-Connection ~ 7450 1850
-Wire Wire Line
-	7450 1850 7750 1850
 $Comp
 L power:GND #PWR?
 U 1 1 601192B6
-P 7750 2000
-F 0 "#PWR?" H 7750 1750 50  0001 C CNN
-F 1 "GND" H 7755 1827 50  0000 C CNN
-F 2 "" H 7750 2000 50  0001 C CNN
-F 3 "" H 7750 2000 50  0001 C CNN
-	1    7750 2000
+P 7500 2050
+F 0 "#PWR?" H 7500 1800 50  0001 C CNN
+F 1 "GND" H 7505 1877 50  0000 C CNN
+F 2 "" H 7500 2050 50  0001 C CNN
+F 3 "" H 7500 2050 50  0001 C CNN
+	1    7500 2050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7750 2000 7750 1850
-Connection ~ 7750 1850
-Wire Wire Line
-	7750 1850 8100 1850
 $Comp
 L Device:R_POT RV?
 U 1 1 6011BE15
@@ -246,21 +203,15 @@ Wire Wire Line
 Wire Wire Line
 	6200 3650 6200 3950
 Wire Wire Line
-	6200 3950 4100 3950
+	6200 3950 5200 3950
 Text GLabel 4100 1850 1    50   Input ~ 0
 Vload
-Text GLabel 6350 1000 0    50   Input ~ 0
+Text GLabel 6500 950  0    50   Input ~ 0
 Vload
 Wire Wire Line
-	6350 1000 6750 1000
-Connection ~ 6750 1000
-Wire Wire Line
 	4100 1850 4100 2500
-Text GLabel 8850 1000 2    50   Input ~ 0
+Text GLabel 9250 950  2    50   Input ~ 0
 Vcc
-Wire Wire Line
-	8850 1000 8600 1000
-Connection ~ 8600 1000
 Text GLabel 1850 1950 1    50   Input ~ 0
 Vcc
 Wire Wire Line
@@ -276,4 +227,114 @@ F 3 "" H 1850 3350 50  0001 C CNN
 	1    1850 3350
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 600A09A2
+P 5200 4050
+F 0 "#PWR?" H 5200 3800 50  0001 C CNN
+F 1 "GND" H 5205 3877 50  0000 C CNN
+F 2 "" H 5200 4050 50  0001 C CNN
+F 3 "" H 5200 4050 50  0001 C CNN
+	1    5200 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4050 5200 3950
+Connection ~ 5200 3950
+Wire Wire Line
+	5200 3950 4100 3950
+$Comp
+L CurrentSink:TPS7A2401 U?
+U 1 1 600F4C8B
+P 7500 1300
+F 0 "U?" H 7500 1915 50  0000 C CNN
+F 1 "TPS7A2401" H 7500 1824 50  0000 C CNN
+F 2 "" H 7500 1300 50  0001 C CNN
+F 3 "" H 7500 1300 50  0001 C CNN
+	1    7500 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 950  6650 950 
+Wire Wire Line
+	6650 1250 6650 950 
+Connection ~ 6650 950 
+Wire Wire Line
+	6650 950  6900 950 
+Wire Wire Line
+	7000 1100 6900 1100
+Wire Wire Line
+	6900 1100 6900 950 
+Connection ~ 6900 950 
+Wire Wire Line
+	6900 950  7000 950 
+Wire Wire Line
+	6650 1550 6650 2000
+Wire Wire Line
+	6650 2000 7500 2000
+Wire Wire Line
+	7500 2000 7500 1850
+Wire Wire Line
+	7500 2050 7500 2000
+Connection ~ 7500 2000
+Wire Wire Line
+	8000 950  8200 950 
+Wire Wire Line
+	9000 1200 9000 950 
+Connection ~ 9000 950 
+Wire Wire Line
+	9000 950  9250 950 
+Wire Wire Line
+	8550 1250 8550 950 
+Connection ~ 8550 950 
+Wire Wire Line
+	8550 950  9000 950 
+$Comp
+L Device:R R?
+U 1 1 600FFFE5
+P 8200 1150
+F 0 "R?" H 8270 1196 50  0000 L CNN
+F 1 "10K" H 8270 1105 50  0000 L CNN
+F 2 "" V 8130 1150 50  0001 C CNN
+F 3 "~" H 8200 1150 50  0001 C CNN
+	1    8200 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 601007C4
+P 8200 1650
+F 0 "R?" H 8270 1696 50  0000 L CNN
+F 1 "10K" H 8270 1605 50  0000 L CNN
+F 2 "" V 8130 1650 50  0001 C CNN
+F 3 "~" H 8200 1650 50  0001 C CNN
+	1    8200 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 1000 8200 950 
+Connection ~ 8200 950 
+Wire Wire Line
+	8200 950  8550 950 
+Wire Wire Line
+	8200 1300 8200 1400
+Wire Wire Line
+	8200 1800 8200 2000
+Wire Wire Line
+	8200 2000 7500 2000
+Wire Wire Line
+	8000 1400 8200 1400
+Connection ~ 8200 1400
+Wire Wire Line
+	8200 1400 8200 1500
+Wire Wire Line
+	9000 1800 9000 2000
+Wire Wire Line
+	9000 2000 8550 2000
+Connection ~ 8200 2000
+Wire Wire Line
+	8550 1550 8550 2000
+Connection ~ 8550 2000
+Wire Wire Line
+	8550 2000 8200 2000
 $EndSCHEMATC
