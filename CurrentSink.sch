@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 1 1
+Sheet 1 4
 Title "Current-Sink-Or-Swim"
 Date ""
 Rev "V01A"
@@ -14,327 +14,166 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Amplifier_Operational:MCP6002-xSN U?
-U 1 1 60089667
-P 5000 2650
-F 0 "U?" H 5000 3017 50  0000 C CNN
-F 1 "MCP6002" H 5000 2926 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5000 2650 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 5000 2650 50  0001 C CNN
-F 4 "MCP6002T-I/SN" H 5000 2650 50  0001 C CNN "MPN"
-	1    5000 2650
-	1    0    0    -1  
+L Connector_Generic:Conn_01x02 J101
+U 1 1 6010811C
+P 6500 1800
+F 0 "J101" H 6450 1600 50  0000 L CNN
+F 1 "Test-Source" H 6600 1750 50  0000 L CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 6500 1800 50  0001 C CNN
+F 3 "~" H 6500 1800 50  0001 C CNN
+	1    6500 1800
+	1    0    0    1   
 $EndComp
+$Sheet
+S 2500 1000 1500 1500
+U 601B79A0
+F0 "Voltage-Control" 50
+F1 "Voltage-Control.sch" 50
+F2 "V-neg-tst" I R 4000 2250 50 
+F3 "V-pos-tst" I R 4000 1250 50 
+F4 "V-ctrl" I L 2500 2000 50 
+F5 "2.5V-reg" I L 2500 1500 50 
+$EndSheet
 $Comp
-L Amplifier_Operational:MCP6002-xSN U?
-U 3 1 6008AAAD
-P 9100 1500
-F 0 "U?" H 9058 1546 50  0000 L CNN
-F 1 "MCP6002" H 9058 1455 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9100 1500 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 9100 1500 50  0001 C CNN
-	3    9100 1500
+L Connector_Generic:Conn_01x02 J103
+U 1 1 60184A6A
+P 6500 5700
+F 0 "J103" H 6450 5800 50  0000 L CNN
+F 1 "Power-Connector" H 6600 5650 50  0000 L CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-036AH-SMT_Horizontal" H 6500 5700 50  0001 C CNN
+F 3 "~" H 6500 5700 50  0001 C CNN
+	1    6500 5700
 	1    0    0    -1  
 $EndComp
+$Sheet
+S 2500 3000 1500 1500
+U 601B7D0F
+F0 "Current Load" 50
+F1 "Currrent-Load.sch" 50
+F2 "V-ctrl" I L 2500 4000 50 
+F3 "V-pos-tst" I R 4000 3250 50 
+F4 "V-neg-tst" I R 4000 4250 50 
+F5 "2.5V-reg" I L 2500 3500 50 
+$EndSheet
+$Sheet
+S 2500 5000 1500 1500
+U 601B7636
+F0 "Power-Reg" 50
+F1 "Power-Reg.sch" 50
+F2 "2.5V-reg" I L 2500 5750 50 
+F3 "V-neg-src" I R 4000 6250 50 
+F4 "V-pos-src" I R 4000 5250 50 
+$EndSheet
+Wire Wire Line
+	6300 1800 6000 1800
+Wire Wire Line
+	6300 5700 6000 5700
+Wire Wire Line
+	6000 3850 6300 3850
+Wire Wire Line
+	6000 5800 6300 5800
+Wire Wire Line
+	6300 1700 5500 1700
+Wire Wire Line
+	4000 2250 5000 2250
+Wire Wire Line
+	5000 2250 5000 4250
+Wire Wire Line
+	5000 6250 4000 6250
+Wire Wire Line
+	4000 4250 5000 4250
+Connection ~ 5000 4250
+Wire Wire Line
+	5000 4250 5000 6250
+Wire Wire Line
+	4000 1250 4500 1250
+Wire Wire Line
+	4500 1250 4500 3250
+Wire Wire Line
+	4500 3250 4000 3250
+Wire Wire Line
+	5500 1700 5500 1250
+Wire Wire Line
+	5500 1250 4500 1250
+Connection ~ 4500 1250
+Wire Wire Line
+	6000 1800 6000 2250
+Wire Wire Line
+	6000 2250 5000 2250
+Connection ~ 5000 2250
+Wire Wire Line
+	5500 1700 5500 3650
+Wire Wire Line
+	5500 3650 6300 3650
+Connection ~ 5500 1700
+Wire Wire Line
+	6300 3750 5750 3750
+Wire Wire Line
+	5750 3750 5750 5250
+Wire Wire Line
+	5750 5250 4000 5250
+Wire Wire Line
+	6000 3850 6000 5700
+Wire Wire Line
+	6000 5800 6000 6250
+Wire Wire Line
+	6000 6250 5000 6250
+Connection ~ 5000 6250
 $Comp
-L Amplifier_Operational:MCP6002-xSN U?
-U 2 1 6008EEC5
-P 2500 2850
-F 0 "U?" H 2500 3217 50  0000 C CNN
-F 1 "MCP6002" H 2500 3126 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2500 2850 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 2500 2850 50  0001 C CNN
-	2    2500 2850
+L power:GND #PWR0101
+U 1 1 60143B97
+P 5000 6500
+F 0 "#PWR0101" H 5000 6250 50  0001 C CNN
+F 1 "GND" H 5005 6327 50  0000 C CNN
+F 2 "" H 5000 6500 50  0001 C CNN
+F 3 "" H 5000 6500 50  0001 C CNN
+	1    5000 6500
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5000 6250 5000 6500
 $Comp
-L Device:Q_NMOS_DSG Q?
-U 1 1 60096368
-P 6100 2650
-F 0 "Q?" H 6304 2696 50  0000 L CNN
-F 1 "STP55NF06L" H 6304 2605 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6300 2750 50  0001 C CNN
-F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/49/c5/a8/71/93/60/4f/86/CD00002690.pdf/files/CD00002690.pdf/jcr:content/translations/en.CD00002690.pdf" H 6100 2650 50  0001 C CNN
-F 4 "STP55NF06L" H 6100 2650 50  0001 C CNN "MPN"
-	1    6100 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 6009839B
-P 6200 3500
-F 0 "R?" H 6270 3546 50  0000 L CNN
-F 1 "0.1" H 6270 3455 50  0000 L CNN
-F 2 "" V 6130 3500 50  0001 C CNN
-F 3 "~" H 6200 3500 50  0001 C CNN
-	1    6200 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 6009E22F
-P 4100 3500
-F 0 "R?" H 4170 3546 50  0000 L CNN
-F 1 "R" H 4170 3455 50  0000 L CNN
-F 2 "" V 4030 3500 50  0001 C CNN
-F 3 "~" H 4100 3500 50  0001 C CNN
-	1    4100 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 600A8DAB
-P 1850 3000
-F 0 "R?" H 1920 3046 50  0000 L CNN
-F 1 "10K" H 1920 2955 50  0000 L CNN
-F 2 "" V 1780 3000 50  0001 C CNN
-F 3 "~" H 1850 3000 50  0001 C CNN
-	1    1850 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 600A983D
-P 1850 2500
-F 0 "R?" H 1920 2546 50  0000 L CNN
-F 1 "10K" H 1920 2455 50  0000 L CNN
-F 2 "" V 1780 2500 50  0001 C CNN
-F 3 "~" H 1850 2500 50  0001 C CNN
-	1    1850 2500
+L Connector_Generic:Conn_01x03 J102
+U 1 1 60184A04
+P 6500 3750
+AR Path="/60184A04" Ref="J102"  Part="1" 
+AR Path="/601B7636/60184A04" Ref="J?"  Part="1" 
+F 0 "J102" H 6450 3950 50  0000 L CNN
+F 1 "Power-Jumper" H 6600 3750 50  0000 L CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" H 6500 3750 50  0001 C CNN
+F 3 "~" H 6500 3750 50  0001 C CNN
+	1    6500 3750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1850 2650 1850 2750
+	2500 5750 1500 5750
 Wire Wire Line
-	2200 2750 1850 2750
-Connection ~ 1850 2750
+	1500 5750 1500 3500
 Wire Wire Line
-	1850 2750 1850 2850
+	1500 1500 2500 1500
 Wire Wire Line
-	2200 2950 2150 2950
+	2500 3500 1500 3500
+Connection ~ 1500 3500
 Wire Wire Line
-	2150 2950 2150 3200
+	1500 3500 1500 1500
 Wire Wire Line
-	2150 3200 2900 3200
+	2500 4000 2000 4000
 Wire Wire Line
-	2900 3200 2900 2850
+	2000 4000 2000 2000
 Wire Wire Line
-	2900 2850 2800 2850
-Wire Wire Line
-	1850 3150 1850 3350
-Wire Wire Line
-	4100 2800 4100 3100
-Wire Wire Line
-	4700 2550 4450 2550
-Wire Wire Line
-	4450 2550 4450 3100
-Wire Wire Line
-	4450 3100 4100 3100
-Connection ~ 4100 3100
-Wire Wire Line
-	4100 3100 4100 3350
-Wire Wire Line
-	4100 3650 4100 3950
-Wire Wire Line
-	5300 2650 5900 2650
-Wire Wire Line
-	6200 2850 6200 3100
-$Comp
-L Device:C C?
-U 1 1 600F940B
-P 8550 1400
-F 0 "C?" H 8665 1446 50  0000 L CNN
-F 1 "10uF" H 8665 1355 50  0000 L CNN
-F 2 "" H 8588 1250 50  0001 C CNN
-F 3 "~" H 8550 1400 50  0001 C CNN
-	1    8550 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 600F9C77
-P 6650 1400
-F 0 "C?" H 6765 1446 50  0000 L CNN
-F 1 "1uF" H 6765 1355 50  0000 L CNN
-F 2 "" H 6688 1250 50  0001 C CNN
-F 3 "~" H 6650 1400 50  0001 C CNN
-	1    6650 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 601192B6
-P 7500 2050
-F 0 "#PWR?" H 7500 1800 50  0001 C CNN
-F 1 "GND" H 7505 1877 50  0000 C CNN
-F 2 "" H 7500 2050 50  0001 C CNN
-F 3 "" H 7500 2050 50  0001 C CNN
-	1    7500 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_POT RV?
-U 1 1 6011BE15
-P 4100 2650
-F 0 "RV?" H 4031 2696 50  0000 R CNN
-F 1 "R_POT" H 4031 2605 50  0000 R CNN
-F 2 "" H 4100 2650 50  0001 C CNN
-F 3 "~" H 4100 2650 50  0001 C CNN
-	1    4100 2650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 2650 4300 2650
-Wire Wire Line
-	4300 2650 4300 2100
-Wire Wire Line
-	4700 2750 4600 2750
-Wire Wire Line
-	4600 2750 4600 3100
-Wire Wire Line
-	4600 3100 6200 3100
-Connection ~ 6200 3100
-Wire Wire Line
-	6200 3100 6200 3350
-Wire Wire Line
-	4300 2100 6200 2100
-Wire Wire Line
-	6200 2100 6200 2450
-Wire Wire Line
-	6200 3650 6200 3950
-Wire Wire Line
-	6200 3950 5200 3950
-Text GLabel 4100 1850 1    50   Input ~ 0
-Vload
-Text GLabel 6500 950  0    50   Input ~ 0
-Vload
-Wire Wire Line
-	4100 1850 4100 2500
-Text GLabel 9250 950  2    50   Input ~ 0
-Vcc
-Text GLabel 1850 1950 1    50   Input ~ 0
-Vcc
-Wire Wire Line
-	1850 1950 1850 2350
-$Comp
-L power:GND #PWR?
-U 1 1 601645D4
-P 1850 3350
-F 0 "#PWR?" H 1850 3100 50  0001 C CNN
-F 1 "GND" H 1855 3177 50  0000 C CNN
-F 2 "" H 1850 3350 50  0001 C CNN
-F 3 "" H 1850 3350 50  0001 C CNN
-	1    1850 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 600A09A2
-P 5200 4050
-F 0 "#PWR?" H 5200 3800 50  0001 C CNN
-F 1 "GND" H 5205 3877 50  0000 C CNN
-F 2 "" H 5200 4050 50  0001 C CNN
-F 3 "" H 5200 4050 50  0001 C CNN
-	1    5200 4050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5200 4050 5200 3950
-Connection ~ 5200 3950
-Wire Wire Line
-	5200 3950 4100 3950
-$Comp
-L CurrentSink:TPS7A2401 U?
-U 1 1 600F4C8B
-P 7500 1300
-F 0 "U?" H 7500 1915 50  0000 C CNN
-F 1 "TPS7A2401" H 7500 1824 50  0000 C CNN
-F 2 "" H 7500 1300 50  0001 C CNN
-F 3 "" H 7500 1300 50  0001 C CNN
-	1    7500 1300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6500 950  6650 950 
-Wire Wire Line
-	6650 1250 6650 950 
-Connection ~ 6650 950 
-Wire Wire Line
-	6650 950  6900 950 
-Wire Wire Line
-	7000 1100 6900 1100
-Wire Wire Line
-	6900 1100 6900 950 
-Connection ~ 6900 950 
-Wire Wire Line
-	6900 950  7000 950 
-Wire Wire Line
-	6650 1550 6650 2000
-Wire Wire Line
-	6650 2000 7500 2000
-Wire Wire Line
-	7500 2000 7500 1850
-Wire Wire Line
-	7500 2050 7500 2000
-Connection ~ 7500 2000
-Wire Wire Line
-	8000 950  8200 950 
-Wire Wire Line
-	9000 1200 9000 950 
-Connection ~ 9000 950 
-Wire Wire Line
-	9000 950  9250 950 
-Wire Wire Line
-	8550 1250 8550 950 
-Connection ~ 8550 950 
-Wire Wire Line
-	8550 950  9000 950 
-$Comp
-L Device:R R?
-U 1 1 600FFFE5
-P 8200 1150
-F 0 "R?" H 8270 1196 50  0000 L CNN
-F 1 "10K" H 8270 1105 50  0000 L CNN
-F 2 "" V 8130 1150 50  0001 C CNN
-F 3 "~" H 8200 1150 50  0001 C CNN
-	1    8200 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 601007C4
-P 8200 1650
-F 0 "R?" H 8270 1696 50  0000 L CNN
-F 1 "10K" H 8270 1605 50  0000 L CNN
-F 2 "" V 8130 1650 50  0001 C CNN
-F 3 "~" H 8200 1650 50  0001 C CNN
-	1    8200 1650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8200 1000 8200 950 
-Connection ~ 8200 950 
-Wire Wire Line
-	8200 950  8550 950 
-Wire Wire Line
-	8200 1300 8200 1400
-Wire Wire Line
-	8200 1800 8200 2000
-Wire Wire Line
-	8200 2000 7500 2000
-Wire Wire Line
-	8000 1400 8200 1400
-Connection ~ 8200 1400
-Wire Wire Line
-	8200 1400 8200 1500
-Wire Wire Line
-	9000 1800 9000 2000
-Wire Wire Line
-	9000 2000 8550 2000
-Connection ~ 8200 2000
-Wire Wire Line
-	8550 1550 8550 2000
-Connection ~ 8550 2000
-Wire Wire Line
-	8550 2000 8200 2000
+	2000 2000 2500 2000
+Text Label 5200 6250 0    50   ~ 0
+V-neg-src
+Text Label 6000 4800 0    50   ~ 0
+V-pos-src
+Text Label 5100 5250 0    50   ~ 0
+V-pos-src
+Text Label 4150 4250 0    50   ~ 0
+V-neg-tst
+Text Label 4750 1250 0    50   ~ 0
+V-pos-tst
+Text Label 2100 2000 0    50   ~ 0
+V-ctrl
+Text Label 1750 1500 0    50   ~ 0
+2.5V-reg
 $EndSCHEMATC
