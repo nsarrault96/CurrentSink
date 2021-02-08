@@ -49,7 +49,7 @@ $Sheet
 S 2500 3000 1500 1500
 U 601B7D0F
 F0 "Current Load" 50
-F1 "Currrent-Load.sch" 50
+F1 "Current-Load.sch" 50
 F2 "V-ctrl" I L 2500 4000 50 
 F3 "V-pos-tst" I R 4000 3250 50 
 F4 "V-neg-tst" I R 4000 4250 50 
