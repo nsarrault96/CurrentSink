@@ -142,4 +142,16 @@ Text HLabel 4450 3150 1    50   Input ~ 0
 Text HLabel 5700 4100 3    50   Input ~ 0
 V-neg-tst
 NoConn ~ 4650 3250
+$Comp
+L Connector_Generic:Conn_01x01 J301
+U 1 1 6021C92B
+P 7250 3000
+F 0 "J301" H 7330 3042 50  0000 L CNN
+F 1 "Heatsink" H 7330 2951 50  0000 L CNN
+F 2 "f:Heatsink" H 7250 3000 50  0001 C CNN
+F 3 "~" H 7250 3000 50  0001 C CNN
+	1    7250 3000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7050 3000
 $EndSCHEMATC
