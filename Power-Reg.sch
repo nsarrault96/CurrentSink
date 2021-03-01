@@ -23,6 +23,7 @@ F 0 "U201" H 6908 3846 50  0000 L CNN
 F 1 "MCP6002" H 6908 3755 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6950 3800 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 6950 3800 50  0001 C CNN
+F 4 "MCP6002T-I/SN" H 6950 3800 50  0001 C CNN "MPN"
 	3    6950 3800
 	1    0    0    -1  
 $EndComp
@@ -61,7 +62,8 @@ AR Path="/601B7636/60164DFB" Ref="U401"  Part="1"
 F 0 "U401" H 5350 4215 50  0000 C CNN
 F 1 "TPS7A2401" H 5350 4124 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 5350 3600 50  0001 C CNN
-F 3 "" H 5350 3600 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tps7a24.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1613174744075" H 5350 3600 50  0001 C CNN
+F 4 "TPS7A2401DBVR" H 5350 3600 50  0001 C CNN "MPN"
 	1    5350 3600
 	1    0    0    -1  
 $EndComp
@@ -93,8 +95,8 @@ L Device:R R?
 U 1 1 60164E14
 P 6050 3450
 AR Path="/60164E14" Ref="R?"  Part="1" 
-AR Path="/601B7636/60164E14" Ref="R401"  Part="1" 
-F 0 "R401" H 6120 3496 50  0000 L CNN
+AR Path="/601B7636/60164E14" Ref="R402"  Part="1" 
+F 0 "R402" H 6120 3496 50  0000 L CNN
 F 1 "10K" H 6120 3405 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5980 3450 50  0001 C CNN
 F 3 "~" H 6050 3450 50  0001 C CNN
@@ -106,8 +108,8 @@ L Device:R R?
 U 1 1 60164E1A
 P 6050 3950
 AR Path="/60164E1A" Ref="R?"  Part="1" 
-AR Path="/601B7636/60164E1A" Ref="R402"  Part="1" 
-F 0 "R402" H 6120 3996 50  0000 L CNN
+AR Path="/601B7636/60164E1A" Ref="R403"  Part="1" 
+F 0 "R403" H 6120 3996 50  0000 L CNN
 F 1 "10K" H 6120 3905 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5980 3950 50  0001 C CNN
 F 3 "~" H 6050 3950 50  0001 C CNN
@@ -141,39 +143,35 @@ Connection ~ 6400 4300
 Wire Wire Line
 	6400 4300 6050 4300
 Text HLabel 8300 3250 2    50   Input ~ 0
-2.5V-reg
+2.5V
 Wire Wire Line
 	4100 3250 3650 3250
 Connection ~ 4100 3250
-Text HLabel 5350 4350 3    50   Input ~ 0
-V-neg-src
 Text HLabel 3650 3250 0    50   Input ~ 0
-V-pos-src
-Text Label 5900 3700 0    50   ~ 0
-FB
-Text Label 3650 3250 0    50   ~ 0
-V-pos-src
-Text Label 5350 4300 0    50   ~ 0
-V-neg-src
+regIN
+Text Label 6050 3700 0    50   ~ 0
+regFB
+Text Label 3700 3250 0    50   ~ 0
+regIN
 Text Label 7000 3250 0    50   ~ 0
-V2.5-reg
+2.5V
 Wire Wire Line
 	4100 3250 4350 3250
 $Comp
-L Device:R R403
+L Device:R R401
 U 1 1 601B0CA0
-P 4600 3400
-F 0 "R403" V 4500 3400 50  0000 C CNN
-F 1 "0" V 4700 3400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4530 3400 50  0001 C CNN
-F 3 "~" H 4600 3400 50  0001 C CNN
-	1    4600 3400
+P 4550 3400
+F 0 "R401" V 4450 3400 50  0000 C CNN
+F 1 "0" V 4650 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4480 3400 50  0001 C CNN
+F 3 "~" H 4550 3400 50  0001 C CNN
+	1    4550 3400
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4750 3400 4850 3400
+	4700 3400 4850 3400
 Wire Wire Line
-	4450 3400 4350 3400
+	4400 3400 4350 3400
 Wire Wire Line
 	4350 3400 4350 3250
 Connection ~ 4350 3250
@@ -231,4 +229,8 @@ Wire Notes Line
 	7300 3500 7300 3900
 Text Notes 8300 3750 0    50   ~ 0
 Local Caps for U201
+Text HLabel 5350 4350 3    50   Input ~ 0
+GND
+Text Label 4800 3400 3    50   ~ 0
+regEN
 $EndSCHEMATC
