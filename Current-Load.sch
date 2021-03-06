@@ -20,10 +20,10 @@ P 6500 3350
 AR Path="/6015D33B" Ref="Q?"  Part="1" 
 AR Path="/601B7D0F/6015D33B" Ref="Q301"  Part="1" 
 F 0 "Q301" H 6704 3396 50  0000 L CNN
-F 1 "STP55NF06L" H 6704 3305 50  0000 L CNN
+F 1 "STP60NF06L" H 6704 3305 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6700 3450 50  0001 C CNN
-F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/49/c5/a8/71/93/60/4f/86/CD00002690.pdf/files/CD00002690.pdf/jcr:content/translations/en.CD00002690.pdf" H 6500 3350 50  0001 C CNN
-F 4 "STP55NF06L" H 6500 3350 50  0001 C CNN "MPN"
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/57/fb/ac/00/b5/ba/4f/e7/CD00002907.pdf/files/CD00002907.pdf/jcr:content/translations/en.CD00002907.pdf" H 6500 3350 50  0001 C CNN
+F 4 "STP60NF06L" H 6500 3350 50  0001 C CNN "MPN"
 	1    6500 3350
 	1    0    0    -1  
 $EndComp
@@ -84,7 +84,7 @@ U 1 1 6015D369
 P 6050 3350
 F 0 "R302" V 5843 3350 50  0000 C CNN
 F 1 "1K" V 5934 3350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5980 3350 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5980 3350 50  0001 C CNN
 F 3 "~" H 6050 3350 50  0001 C CNN
 	1    6050 3350
 	0    1    1    0   
@@ -121,7 +121,7 @@ U 1 1 6015D347
 P 4650 3400
 F 0 "R301" H 4720 3446 50  0000 L CNN
 F 1 "6.2K" H 4720 3355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4580 3400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4580 3400 50  0001 C CNN
 F 3 "~" H 4650 3400 50  0001 C CNN
 	1    4650 3400
 	1    0    0    -1  
@@ -158,8 +158,9 @@ U 1 1 6039970D
 P 5500 3350
 F 0 "U201" H 5500 3717 50  0000 C CNN
 F 1 "MCP6002" H 5500 3626 50  0000 C CNN
-F 2 "" H 5500 3350 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5500 3350 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 5500 3350 50  0001 C CNN
+F 4 "MCP6002T-I/SN" H 5500 3350 50  0001 C CNN "MPN"
 	1    5500 3350
 	1    0    0    -1  
 $EndComp

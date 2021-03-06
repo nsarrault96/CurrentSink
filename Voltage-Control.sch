@@ -48,7 +48,7 @@ AR Path="/6016A52B" Ref="R?"  Part="1"
 AR Path="/601B79A0/6016A52B" Ref="R201"  Part="1" 
 F 0 "R201" H 4820 3196 50  0000 L CNN
 F 1 "1K" H 4820 3105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4680 3150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4680 3150 50  0001 C CNN
 F 3 "~" H 4750 3150 50  0001 C CNN
 	1    4750 3150
 	-1   0    0    -1  
@@ -63,7 +63,7 @@ AR Path="/6016A53B" Ref="R?"  Part="1"
 AR Path="/601B79A0/6016A53B" Ref="R203"  Part="1" 
 F 0 "R203" H 6420 3046 50  0000 L CNN
 F 1 "1K" H 6420 2955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6280 3000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6280 3000 50  0001 C CNN
 F 3 "~" H 6350 3000 50  0001 C CNN
 	1    6350 3000
 	-1   0    0    -1  
@@ -76,7 +76,7 @@ AR Path="/6016A541" Ref="R?"  Part="1"
 AR Path="/601B79A0/6016A541" Ref="R202"  Part="1" 
 F 0 "R202" H 6420 2646 50  0000 L CNN
 F 1 "9K" H 6420 2555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6280 2600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6280 2600 50  0001 C CNN
 F 3 "~" H 6350 2600 50  0001 C CNN
 	1    6350 2600
 	-1   0    0    -1  
@@ -131,8 +131,9 @@ U 2 1 60396245
 P 5450 3250
 F 0 "U201" H 5450 3617 50  0000 C CNN
 F 1 "MCP6002" H 5450 3526 50  0000 C CNN
-F 2 "" H 5450 3250 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5450 3250 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 5450 3250 50  0001 C CNN
+F 4 "MCP6002T-I/SN" H 5450 3250 50  0001 C CNN "MPN"
 	2    5450 3250
 	1    0    0    -1  
 $EndComp
