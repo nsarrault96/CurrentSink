@@ -142,7 +142,7 @@ AR Path="/60184A04" Ref="J102"  Part="1"
 AR Path="/601B7636/60184A04" Ref="J?"  Part="1" 
 F 0 "J102" H 6450 3950 50  0000 L CNN
 F 1 "pwrJmp" H 6600 3750 50  0000 L CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" H 6500 3750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6500 3750 50  0001 C CNN
 F 3 "~" H 6500 3750 50  0001 C CNN
 	1    6500 3750
 	1    0    0    -1  
